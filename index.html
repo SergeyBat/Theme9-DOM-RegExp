@@ -10,10 +10,40 @@
 </head>
 
 <body>
-	<form action="" name="changeText" onsubmit="return false;">
-		<input type="text" name="text">
+	<h1 class="title">
+		Email list
+	</h1>
+
+	<form  name="formTask2" class="formTask2" onsubmit="return false;">
+		<input class="formTask2__input" type="text" name="text" placeholder="Type here to add new Email">
+		<span class="error" aria-live="polite"></span>
+		<ul class="emailList">
+			<li class="emailList__item">
+				<input class="emailList__radio" type="radio" id="emailChoice0" name="email" value="sergey@mail.ru">
+				<label class="emailList__label" for="emailChoice0">
+					sergey@mail.ru
+				</label>
+				<button type="button" class="emailList__delItem">&#9747</button>
+			</li>
+			<li class="emailList__item">
+				<input class="emailList__radio" type="radio" id="emailChoice1" name="email" value="sergey@gmail.com">
+				<label class="emailList__label" for="emailChoice1">
+					sergey@gmail.com
+				</label>
+				<button type="button" class="emailList__delItem">&#9747</button>
+			</li>
+			<li class="emailList__item">
+				<input class="emailList__radio" type="radio" id="emailChoice2" name="email" value="srgey09_3245.saf.1W-dfsg@mail.blog">
+				<label class="emailList__label" for="emailChoice2">
+					srgey09_3245.saf.1W-dfsg@mail.blog
+				</label>
+				<button type="button" class="emailList__delItem">&#9747</button>
+			</li>
+
+		</ul>
+		<span id="textCounter" class="formTask2__counter"></span>
 	</form>
-	<div class="output"></div>
+
 
 	<script src="script.js"></script>
 </body>
