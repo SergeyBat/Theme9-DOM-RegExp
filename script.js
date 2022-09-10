@@ -49,7 +49,8 @@ function addEmailinEmailList() {
 }
 
 function validate(){
-	let value = input.value;
+	let value = input.value.trim();
+	console.log(value)
 	let reg = /^(?<name>[\w\_\-\.]+)@(?<address>[A-Za-z]+)(?<domaine>\.[A-Za-z]{2,4})$/mi;
 	if (reg.test(value)) {
 		return true;
